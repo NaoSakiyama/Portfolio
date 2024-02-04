@@ -1,0 +1,174 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #72c4b95d;
+        }
+
+        header {
+            background-color: #5ec7b5;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        section p {
+            margin-bottom: 10px;
+        }
+        .project {
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease, filter 0.3s ease; /* トランジションを追加 */
+        }
+
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0; /* 変更: 幅を0に設定 */
+            height: 0; /* 変更: 高さを0に設定 */
+            background: rgba(0, 0, 0, 0.2); /* 黒い背景色（透明度を変更可能） */
+            opacity: 0;
+            transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease; /* トランジションを変更 */
+        }
+
+        .project:hover::before {
+            width: 50%; /* 変更: カーソルを重ねると幅が100%に変更 */
+            height: 100%; /* 変更: カーソルを重ねると高さが100%に変更 */
+            opacity: 0.5; /* カーソルを重ねると不透明になる */
+        }
+        .project:hover h3 {
+            color: #989595f8; /* カーソルを重ねたときに色を反転させる */
+        }
+
+        .project-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2em;
+        }
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project1 img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .project2 img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .project3 img {
+            width: 250px;
+            height: 250px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>崎山直央です。ポートフォリオをご覧いただきありがとうございます。</p>
+        <p>このポートフォリオは私の研究や制作、趣味を紹介するためのものです。</p>
+    </section>
+
+    <section>
+
+        <div class="project project2">
+            <h3>研究について</h3>
+            <a href="project2.html" id="project2Link">
+                <img src="logo/学校.png" alt="Project 2 Image">
+            </a>
+        </div>
+
+        <div class="project project1">
+            <h3>3DCG 制作</h3>
+            <a href="project1.html" id="project1Link">
+                <img src="logo/カメラ.png" alt="Project 1 Image">
+            </a>
+        </div>
+
+        <div class="project project3">
+            <h3>Piano</h3>
+            <a href="project3.html" id="project3Link">
+                <img src="logo/ト音記号.png" alt="Project 3 Image">
+            </a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>
+            連絡は<a href="mailto:your.email@example.com">sakiyama.gn@gmail.com</a>まで.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script>
+        // JavaScript code to handle image click event and page redirection
+        var project1Link = document.getElementById('project1Link');
+        project1Link.addEventListener('click', function() {
+            window.location.href = 'project1.html';
+        });
+    </script>
+
+    <script>
+        // JavaScript code to handle image click event and page redirection
+        var project2Link = document.getElementById('project2Link');
+        project2Link.addEventListener('click', function() {
+            window.location.href = 'project2.html';
+        });
+    </script>
+
+    <script>
+        // JavaScript code to handle image click event and page redirection
+        var project3Link = document.getElementById('project3Link');
+        project3Link.addEventListener('click', function() {
+            window.location.href = 'project3.html';
+        });
+    </script>
+
+</body>
+</html>

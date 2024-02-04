@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #72c4b95d;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 画面の高さいっぱいに表示されるように */
+        }
+
+        header {
+            background-color: #5ec7b5;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            flex-grow: 1; /* 余白を埋めるように */
+            padding: 2em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Piano</h1>
+    </header>
+
+    <section>
+        <h3>趣味で続けてきたピアノの練習動画です。</h3>
+    </section>
+    <section>
+        <h2>2023 N.kapustin / Daybreak</h2>
+        <video width="640" height="360" controls>
+            <source src="piano/2023_6_29.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>2021 N.kapustin / Prelude</h2>
+        <video width="640" height="360" controls>
+            <source src="piano/IMG_5224.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>2019 F.Liszt / 愛の夢</h2>
+        <video width="640" height="360" controls>
+            <source src="piano/IMG_2549.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section>
+        <h2>[おまけ] The Beatles / Blackbird</h2>
+        <video width="640" height="360" controls>
+            <source src="piano/IMG_6699.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
