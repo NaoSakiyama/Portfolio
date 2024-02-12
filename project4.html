@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #72c4b95d;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 画面の高さいっぱいに表示されるように */
+        }
+
+        header {
+            background-color: #5ec7b5;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            flex-grow: 1; /* 余白を埋めるように */
+            padding: 2em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .paragraph {
+            width: 60%; /* 横幅を50%に設定 */
+            margin: 0 auto; /* 中央寄せ */
+            font-size: 24px;
+            white-space: pre-line; /* 改行を維持する */
+            text-align: left;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .video {
+                width: auto;
+                height: 30%;
+            }
+            .modal {
+                padding: 10px;
+            }
+            .enlarged-image {
+                max-width: 50%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Applications</h1>
+    </header>
+
+    <section>
+        <h2>これまでに制作したアプリを紹介します。</h2>
+    </section>
+    <section>
+        <h2> Chat GPT App </h2>
+        <iframe width="1080" height="720" src="https://www.youtube.com/embed/N1FPbNyKpGQ?si=iyE0eZjoXQlAMC9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="paragraph">
+            <br>このアプリは、ChatGPTの強力な文章生成能力を活用して、簡単かつクリエイティブな文章作成を実現します。以下に、アプリの魅力的な特徴をご紹介いたします。
+
+            <img class="project-image" src="apps_pics/theme.png" alt="Project 4 Image">
+            まず、テーマトグル機能により、ユーザーは自分の関心やニーズに合わせたテーマを選択することができます。選択したテーマに関連した質問があらかじめ登録されており、これによってユーザーは簡単に文章を作成することができます。
+
+            <video width="1080" height="600" controls loop>
+                <source src="apps_pics/gpt_app_002.mp4" type="video/mp4">
+            </video>
+
+            さらに、テンプレートから選択した質問を自由に変更することが可能です。ユーザーは自分の意図や表現方法に合わせて質問を編集し、よりパーソナライズされた文章を作成することができます。
+
+            また、文字数やキーワードの登録機能により、ユーザーは文章に付け足す情報を指定することができます。これによって、文章が自動的に生成される際に、登録した内容が適切に組み込まれます。さらに、多様性の値を設定することで、ユーザーは文章の創造性や一般性を調整することができます。これにより、ユーザーは自分の好みやニーズに合わせた文章を生成することができます。
+
+            <video width="1080" height="600" controls loop>
+                <source src="apps_pics/gpt_app_003.mp4" type="video/mp4">
+            </video>
+
+            生成された内容はワンクリックで保存することができ、また、これまで生成された文章の履歴もワンクリックで確認することができます。これにより、ユーザーは作成した文章をいつでも簡単に参照したり、再利用したりすることができます。
+
+            このアプリは、文章作成において効率性とパーソナライズ性を両立させることができるため、幅広いユーザーに対して魅力的なツールとなります。例えば、ブロガーやコンテンツクリエイターは、テンプレートの自由な編集機能によって、迅速かつ柔軟な記事作成を実現することができます。また、ビジネスプロフェッショナルや学生は、簡単な操作で専門的な文章を作成することができ、時間を節約することができます。
+            このアプリは、誰もが簡単にクオリティの高い文章を作成できるツールとして、ライフスタイルやビジネスに効率化をもたらします。
+
+            <br></p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
