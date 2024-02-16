@@ -34,22 +34,26 @@
         .paragraph {
             width: 60%; /* 横幅を50%に設定 */
             margin: 0 auto; /* 中央寄せ */
-            font-size: 16px;
+            font-size: 24px;
             white-space: pre-line; /* 改行を維持する */
             text-align: left;
             align-items: center;
-        }
-
-        .project-image {
-            width: 100%;
-            height: auto;
         }
 
         .project-video {
             max-width: 100%;
             max-height: 100%;
         }
-
+        .youtube {
+            width: 60%; /* 横幅を50%に設定 */
+            margin: 0 auto; /* 中央寄せ */
+            font-size: 24px;
+            white-space: pre-line; /* 改行を維持する */
+            text-align: left;
+            align-items: center;
+            max-width: 100%;
+            max-height: 100%;
+        }
         @media (max-width: 767px) {
             .video {
                 width: auto;
@@ -80,12 +84,13 @@
         <h2>これまでに制作したアプリを紹介します。</h2>
     </section>
     <section>
-        <h2> Chat GPT App </h2>
-        <iframe width="1080" height="720" src="https://www.youtube.com/embed/N1FPbNyKpGQ?si=iyE0eZjoXQlAMC9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2 > Chat GPT App </h2>
+        <p class="youtube" >
+            <iframe width="1080" height="720" src="https://www.youtube.com/embed/N1FPbNyKpGQ?si=iyE0eZjoXQlAMC9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
         <p class="paragraph">
             <br>このアプリは、ChatGPTの強力な文章生成能力を活用して、簡単かつクリエイティブな文章作成を実現します。以下に、アプリの魅力的な特徴をご紹介いたします。
 
-            <img class="project-image" src="apps_pics/theme.png" alt="Project 4 Image">
+        <img class="project-video" src="apps_pics/theme.png" alt="Project 4 Image">
 
             まず、テーマトグル機能により、ユーザーは自分の関心やニーズに合わせたテーマを選択することができます。選択したテーマに関連した質問があらかじめ登録されており、これによってユーザーは簡単に文章を作成することができます。
 
